@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = DecentDecoration::VERSION
   gem.authors       = ["Tomasz Pewiński"]
   gem.email         = ["pewniak747@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Use decent_exposure with decorators (e.g. Draper)}
+  gem.summary       = %q{Use decent_exposure with decorators (e.g. Draper)}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
