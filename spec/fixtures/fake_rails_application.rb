@@ -1,10 +1,12 @@
 require 'active_support/all'
+
+require 'decent_exposure'
+require 'decent_decoration'
+
 require 'action_controller'
 require 'action_dispatch'
 require 'active_model'
 
-require 'decent_exposure'
-require 'decent_decoration'
 
 module Rails
   class App
