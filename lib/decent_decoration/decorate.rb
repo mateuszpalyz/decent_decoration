@@ -1,4 +1,4 @@
-module DecentDecorate
+module DecentDecoration
   module Decorate
 
   end

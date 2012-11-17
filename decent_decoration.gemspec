@@ -1,11 +1,11 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'decent_decorate/version'
+require 'decent_decoration/version'
 
 Gem::Specification.new do |gem|
   gem.name          = "decent_decorate"
-  gem.version       = DecentDecorate::VERSION
+  gem.version       = DecentDecoration::VERSION
   gem.authors       = ["Tomasz Pewiński"]
   gem.email         = ["pewniak747@gmail.com"]
   gem.description   = %q{TODO: Write a gem description}
