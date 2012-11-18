@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["pewniak747@gmail.com"]
   gem.description   = %q{Use decent_exposure with decorators (e.g. Draper)}
   gem.summary       = %q{Use decent_exposure with decorators (e.g. Draper)}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/pewniak747/decent_decoration"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
