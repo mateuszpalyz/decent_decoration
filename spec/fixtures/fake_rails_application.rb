@@ -7,7 +7,6 @@ require 'action_controller'
 require 'action_dispatch'
 require 'active_model'
 
-
 module Rails
   class App
     def env_config; {} end
@@ -19,6 +18,9 @@ module Rails
         get '/conference/(:id)' => "conferences#show"
       end
       @routes
+    end
+    def call(*args)
+      routes.call(*args)
     end
   end
   def self.application
