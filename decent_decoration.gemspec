@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'decent_decoration/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "decent_decorate"
+  gem.name          = "decent_decoration"
   gem.version       = DecentDecoration::VERSION
   gem.authors       = ["Tomasz Pewiński"]
   gem.email         = ["pewniak747@gmail.com"]
