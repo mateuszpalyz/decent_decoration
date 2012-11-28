@@ -1,6 +1,6 @@
 module DecentDecoration
   module Decorate
-    def decorate(name, options = {}, &block)
+    def expose_decorated(name, options = {}, &block)
       decorator_class = "#{name.to_s.singularize.classify}Decorator".constantize
       decorated_name = name.to_sym
       undecorated_name = "undecorated_#{name}".to_sym

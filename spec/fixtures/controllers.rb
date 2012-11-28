@@ -17,7 +17,7 @@ end
 class ConferencesController < ActionController::Base
   include Rails.application.routes.url_helpers
 
-  decorate(:conference)
+  expose_decorated(:conference)
 
   def show
     render :text => "foo"
