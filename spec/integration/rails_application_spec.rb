@@ -12,4 +12,9 @@ describe ConferencesController, type: :controller do
     get '/conference/RuPy'
     controller.conference.decorated_object.should be_instance_of(Conference)
   end
+
+  it "should be specified decorator" do
+    get '/conference/RuPy'
+    controller.other_conference.should be_instance_of(CoolConferenceDecorator)
+  end
 end

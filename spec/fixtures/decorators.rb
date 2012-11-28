@@ -5,3 +5,6 @@ class ConferenceDecorator < SimpleDelegator
     __getobj__
   end
 end
+
+class CoolConferenceDecorator < ConferenceDecorator
+end
