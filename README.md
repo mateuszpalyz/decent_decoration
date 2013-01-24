@@ -1,4 +1,5 @@
 # decent_decoration
+[![Build Status](https://secure.travis-ci.org/netguru/decent_decoration.png?branch=master)](http://travis-ci.org/netguru/decent_decoration)
 
 decent_decoration allows you to use excellent [decent_exposure][decent_exposure] gem with decorators.
 
