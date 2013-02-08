@@ -17,6 +17,7 @@ class AttendeesController < ActionController::Base
   include Rails.application.routes.url_helpers
 
   expose_decorated(:attendee)
+  expose_decorated(:attendees) { [Attendee.new, Attendee.new] }
 
   def show
     render :text => "foo"

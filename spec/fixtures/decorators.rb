@@ -11,8 +11,11 @@ class CoolConferenceDecorator < ConferenceDecorator
 end
 
 class AttendeeDecorator < Draper::Decorator
-  decorates :attendee
   def full_name
     "#{first_name} #{last_name}"
+  end
+
+  def self.find(id)
+    Attendee.find(id)
   end
 end

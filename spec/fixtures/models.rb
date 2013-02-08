@@ -13,6 +13,10 @@ module Model
     def klass.find(id)
       new if id
     end
+
+    def klass.scoped
+      self
+    end
   end
 end
 
