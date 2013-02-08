@@ -21,4 +21,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rspec-rails', '~> 2.7'
   gem.add_development_dependency 'actionpack', '~> 3.1'
   gem.add_development_dependency 'activesupport', '~> 3.1'
+  gem.add_development_dependency 'draper', '>= 1.0.0'
 end

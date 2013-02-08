@@ -1,5 +1,4 @@
-require 'fixtures/decorators'
-require 'fixtures/controllers'
+require 'fixtures/fake_rails_application'
 require 'rspec/rails'
 
 describe ConferencesController, type: :controller do

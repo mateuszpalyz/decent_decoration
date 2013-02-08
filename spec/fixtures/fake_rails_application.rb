@@ -16,6 +16,8 @@ module Rails
       @routes.draw do
         get '/conferences/new' => "conferences#new"
         get '/conference/(:id)' => "conferences#show"
+        get '/attendees/new' => "attendees#new"
+        get '/attendee/(:id)' => "attendees#show"
       end
       @routes
     end
@@ -27,3 +29,7 @@ module Rails
     @app ||= App.new
   end
 end
+
+require 'fixtures/models'
+require 'fixtures/decorators'
+require 'fixtures/controllers'
