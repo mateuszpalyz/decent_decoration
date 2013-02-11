@@ -48,6 +48,15 @@ class ConferencesController < ApplicationController
 end
 ```
 
+decent_decoration detect automatically if you want to decorate a collection. To circumvent this pass collection: true/false
+
+``` ruby
+# app/controllers/conferences_controller.rb
+class ConferencesController < ApplicationController
+  expose_decorated(:conferences, collection: false)
+end
+```
+
 decent_decoration supports most of the awesome [decent_exposure api][decent_exposure_api]. Read [more about it!][decent_exposure_api]
 
 ``` ruby

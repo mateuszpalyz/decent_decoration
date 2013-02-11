@@ -48,6 +48,13 @@ describe DecentDecoration::Decoration do
       it "should be :new if decorator does not support :decorate_collection or :decorate" do
         subject.decorate_method.should == :new
       end
+
+      it "should be :decorate if decorator supports it and collection: false" do
+        decorator.stub(:decorate)
+        decorator.stub(:decorate_collection)
+        subject = klass.new(:conferences, decorator: decorator, collection: false)
+        subject.decorate_method.should == :decorate
+      end
     end
 
     describe "when name is singular" do
@@ -59,7 +66,14 @@ describe DecentDecoration::Decoration do
         subject.decorate_method.should_not == :decorate_collection
       end
 
-      it "should be :decorate if decorator does not supports it" do
+      it "should be :decorate_collection if decorator supports it and collection: true" do
+        decorator.stub(:decorate)
+        decorator.stub(:decorate_collection)
+        subject = klass.new(:conference, decorator: decorator, collection: true)
+        subject.decorate_method.should == :decorate_collection
+      end
+
+      it "should be :decorate if decorator supports it" do
         decorator.stub(:decorate)
         subject.decorate_method.should == :decorate
       end

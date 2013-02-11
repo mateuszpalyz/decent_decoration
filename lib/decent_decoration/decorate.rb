@@ -13,7 +13,7 @@ module DecentDecoration
     end
 
     def options
-      original_options.except(:decorator).tap do |h|
+      original_options.except(:decorator, :collection).tap do |h|
         h[:model] ||= name
       end
     end
@@ -23,7 +23,7 @@ module DecentDecoration
     end
 
     def decorate_method
-      if plural_name? && decorator_class.respond_to?(:decorate_collection)
+      if decorate_collection? && decorator_class.respond_to?(:decorate_collection)
         :decorate_collection
       elsif decorator_class.respond_to?(:decorate)
         :decorate
@@ -36,6 +36,14 @@ module DecentDecoration
 
     def infer_decorator_class
       "#{options[:model].to_s.classify}Decorator".constantize
+    end
+
+    def decorate_collection?
+      (plural_name? && force_collection != false) || force_collection == true
+    end
+
+    def force_collection
+      original_options[:collection]
     end
 
     def plural_name?
