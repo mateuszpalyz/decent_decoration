@@ -73,8 +73,7 @@ module DecentDecoration
 
       helper Module.new do
         define_method(name) do
-          @_decorated_objects ||= {}
-          @_decorated_objects[name]  ||= public_send(decorated_name)
+          public_send(decorated_name)
         end
       end
     end

@@ -17,6 +17,15 @@ describe ConferencesController, type: :controller do
       get '/conference/RuPy'
       controller.view_context.other_conference.should be_instance_of(CoolConferenceDecorator)
     end
+
+    it "should cache decorator" do
+      get '/conference/RuPy'
+      controller.view_context.conference.object_id.should == controller.view_context.conference.object_id
+    end
+
+    it "should cache decorated object" do
+      controller.view_context.conference.decorated_object.object_id.should == controller.view_context.conference.decorated_object.object_id
+    end
   end
 
   describe "inside a controller" do
