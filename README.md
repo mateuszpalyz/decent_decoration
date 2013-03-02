@@ -36,8 +36,9 @@ end
 class ConferencesController < ApplicationController
   expose_decorated(:conference)
 end
-
 ```
+
+decent_decoration makes decorated objects accessible in views. They remain undecorated in your controllers.
 
 Define a decorator explicitly:
 
