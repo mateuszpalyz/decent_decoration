@@ -8,8 +8,8 @@ module DecentDecoration
       self.original_options = options
     end
 
-    def undecorated_name
-      "undecorated_#{name}".to_sym
+    def decorated_name
+      "decorated_#{name}".to_sym
     end
 
     def options
@@ -65,11 +65,18 @@ module DecentDecoration
 
       decorator_class  = decoration.decorator_class
       decorate_method  = decoration.decorate_method
-      undecorated_name = decoration.undecorated_name
+      decorated_name = decoration.decorated_name
       options          = decoration.options
 
-      expose(undecorated_name, options, &block)
-      expose(name) { decorator_class.public_send(decorate_method, public_send(undecorated_name)) }
+      expose(name, options, &block)
+      expose(decorated_name) { decorator_class.public_send(decorate_method, public_send(name)) }
+
+      helper Module.new do
+        define_method(name) do
+          @_decorated_objects ||= {}
+          @_decorated_objects[name]  ||= public_send(decorated_name)
+        end
+      end
     end
   end
 end

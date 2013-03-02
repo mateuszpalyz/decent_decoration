@@ -14,9 +14,9 @@ describe DecentDecoration::Decoration do
     subject.options.should == { model: :conference }
   end
 
-  describe "#undecorated_name" do
-    it "should consist of name prepended by undecorated" do
-      klass.new(:conference).undecorated_name.should == :undecorated_conference
+  describe "#decorated_name" do
+    it "should consist of name prepended by decorated" do
+      klass.new(:conference).decorated_name.should == :decorated_conference
     end
   end
 
