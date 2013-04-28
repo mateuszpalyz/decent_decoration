@@ -1,3 +1,4 @@
+require 'spec_helper'
 require 'fixtures/fake_rails_application'
 require 'rspec/rails'
 

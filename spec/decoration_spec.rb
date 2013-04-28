@@ -1,5 +1,4 @@
-require 'active_support/all'
-require 'decent_decoration'
+require 'spec_helper'
 
 describe DecentDecoration::Decoration do
   let(:klass) { DecentDecoration::Decoration }

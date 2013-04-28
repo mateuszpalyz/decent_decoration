@@ -1,5 +1,8 @@
 # decent_decoration
 [![Build Status](https://secure.travis-ci.org/netguru/decent_decoration.png?branch=master)](http://travis-ci.org/netguru/decent_decoration)
+[![Code Climate](https://codeclimate.com/github/netguru/decent_decoration.png)](https://codeclimate.com/github/netguru/decent_decoration)
+[![Coverage Status](https://coveralls.io/repos/netguru/decent_decoration/badge.png?branch=master)](https://coveralls.io/r/netguru/decent_decoration)
+[![Gem Version](https://badge.fury.io/rb/decent_decoration.png)](http://badge.fury.io/rb/decent_decoration)
 
 decent_decoration allows you to use excellent [decent_exposure][decent_exposure] gem with decorators.
 
