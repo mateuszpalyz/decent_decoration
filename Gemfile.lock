@@ -43,7 +43,7 @@ GEM
       rest-client
       simplecov (>= 0.7)
       thor
-    decent_exposure (2.1.0)
+    decent_exposure (2.2.0)
     diff-lcs (1.2.3)
     draper (1.1.0)
       actionpack (>= 3.0)
