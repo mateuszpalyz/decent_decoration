@@ -19,7 +19,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency     'decent_exposure', '> 0'
   gem.add_development_dependency 'rspec', '~> 2.13'
   gem.add_development_dependency 'rspec-rails', '~> 2.13'
-  gem.add_development_dependency 'rails', '~> 3.2'
-  gem.add_development_dependency 'activesupport', '~> 3.2'
+  gem.add_development_dependency 'rails', '>= 3.2'
+  gem.add_development_dependency 'activesupport', '>= 3.2'
   gem.add_development_dependency 'draper', '>= 1.0.0'
 end

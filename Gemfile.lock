@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    decent_decoration (0.0.3)
+    decent_decoration (0.0.4)
       decent_exposure (> 0)
 
 GEM
@@ -43,7 +43,7 @@ GEM
       rest-client
       simplecov (>= 0.7)
       thor
-    decent_exposure (2.0.1)
+    decent_exposure (2.1.0)
     diff-lcs (1.2.3)
     draper (1.1.0)
       actionpack (>= 3.0)
@@ -124,10 +124,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (~> 3.2)
+  activesupport (>= 3.2)
   coveralls
   decent_decoration!
   draper (>= 1.0.0)
-  rails (~> 3.2)
+  rails (>= 3.2)
   rspec (~> 2.13)
   rspec-rails (~> 2.13)
