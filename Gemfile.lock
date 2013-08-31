@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    decent_decoration (0.0.4)
+    decent_decoration (0.0.5)
       decent_exposure (> 0)
 
 GEM
