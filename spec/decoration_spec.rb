@@ -32,7 +32,7 @@ describe DecentDecoration::Decoration do
   describe "#decorate_method" do
     describe "when name is plural" do
       subject { klass.new(:conferences, decorator: decorator) }
-      let(:decorator) { stub }
+      let(:decorator) { double }
 
       it "should be :decorate_collection if decorator supports it" do
         decorator.stub(:decorate_collection)
@@ -58,7 +58,7 @@ describe DecentDecoration::Decoration do
 
     describe "when name is singular" do
       subject { klass.new(:conference, decorator: decorator) }
-      let(:decorator) { stub }
+      let(:decorator) { double }
 
       it "should not be :decorate_collection even if decorator supports it" do
         decorator.stub(:decorate_collection)
