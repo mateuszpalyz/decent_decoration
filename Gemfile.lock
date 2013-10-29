@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    decent_decoration (0.0.5)
-      decent_exposure (> 0)
+    decent_decoration (0.0.6)
+      decent_exposure (>= 2.0)
 
 GEM
   remote: https://rubygems.org/
