@@ -84,3 +84,5 @@ You can use any decorator mechanism as long as `ConferenceDecorator` responds to
 [decent_exposure]: https://github.com/voxdolo/decent_exposure
 [decent_exposure_api]: https://github.com/voxdolo/decent_exposure#usage
 [draper]: https://github.com/drapergem/draper
+
+Copyright © 2012–2014 [netguru](https://netguru.co). See LICENSE for further details.
