@@ -66,9 +66,8 @@ module DecentDecoration
       decorator_class  = decoration.decorator_class
       decorate_method  = decoration.decorate_method
       decorated_name = decoration.decorated_name
-      options          = decoration.options
 
-      expose(name, options, &block)
+      expose(name, &block)
       expose(decorated_name) { decorator_class.public_send(decorate_method, public_send(name)) }
 
       helper Module.new do
